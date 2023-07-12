@@ -14,10 +14,11 @@ public with sharing class QueryService extends ZD_VirtualCallable{
                 builder.selectField(field);
                 return this;
             }
-            when 'withwhereclause'{
+            when 'withdateliteralwhereclause'{
                 String field = String.valueOf(args.get('field'));
-                String value = String.valueOf(args.get('value'));
-                Query.Condition condition = new Query.Condition().equals(field, new Query.DateLiteral('LAST_N_DAYS', 30));
+                String operator = String.valueOf(args.get('operator'));
+                Integer value = Integer.valueOf(args.get('value'));
+                Query.Condition condition = new Query.Condition().equals(field, new Query.DateLiteral(operator, value));
                 builder.whereCondition(condition);
                 return this;
             }

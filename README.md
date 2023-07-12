@@ -11,6 +11,7 @@ This all happens via the ReservationService, and the ReservationServiceTest test
 1. [ReservationService](https://github.com/jdevlin-bah/ZDF_Demo/blob/main/force-app/reservation-app/main/default/classes/scratch/ReservationService.cls) is an example Service class implementation built on the framework
 2. [ReservationServiceTest](https://github.com/jdevlin-bah/ZDF_Demo/blob/main/force-app/reservation-app/main/default/classes/scratch/ReservationServiceTest.cls) includes test examples for testing every path the service can take
 3. [QueryService](https://github.com/jdevlin-bah/ZDF_Demo/blob/main/force-app/reservation-app/main/default/classes/QueryService.cls) is an example of how to build an adaptor for code that you do not own but still want to include within your codebase in a loosely-coupled way.
+4. [IntegrationTest](https://github.com/jdevlin-bah/ZDF_Demo/blob/main/force-app/reservation-app/main/default/classes/IntegrationTest.cls) is an example a "classic" test with full inserts, hardcoded types, and multiple pieces of functionality happening. Still very much essential, but the number of these can be reduced by 90% or more.
 
 ## ZDF Repository
 https://github.com/boozallen/zd-framework

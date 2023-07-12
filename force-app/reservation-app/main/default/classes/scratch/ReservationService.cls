@@ -66,7 +66,7 @@ public with sharing class ReservationService extends ZD_VirtualCallable{
         Callable querySvc = ZD_CallableFactory.getFactory().getCallableInstance('QueryService');
         querySvc.call('setObject', new Map<String,Object>{'objectType' => 'Reservation__c'});
         querySvc.call('selectField', new Map<String,Object>{'field' => 'Customer__c'});
-        querySvc.call('withWhereClause', new Map<String,Object>{'field' => 'Date_and_Time__c', 'value' => 'Last_N_Days:30'});
+        querySvc.call('withDateLiteralWhereClause', new Map<String,Object>{'field' => 'Date_and_Time__c', 'operator' => 'Last_N_Days', 'value' => 30});
         String query = String.valueOf(querySvc.call('build', null));
         List<ZD_Record> reservations = ZD_DatabaseService.queryAsZDRecords(query);
         if(this.reservationsMap == null){
