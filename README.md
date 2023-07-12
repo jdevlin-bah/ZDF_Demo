@@ -1,5 +1,5 @@
 # ZDF Demo Repo
-This repo houses a sample application to demonstrate the Zero Dependencies Framework. Here we make use of a custom object to represent servations. On the Reservation, a few things happen:
+This repo houses a sample application to demonstrate the Zero Dependencies Framework. Here we make use of a custom object to represent reservations. On the insert of a reservation, a few things happen:
 1. The record is classified as VIP or not based on Custom Metadata configuration stored in the ZD_ApplicationConfiguration__mdt custom metadata type.
 2. Methods can also be stored in the  init_methods custom metadata record to call more methods on instantiation of the service via reflection.
 3. A reminder task is created to confirm with the person the day before the reservation that its still active.
