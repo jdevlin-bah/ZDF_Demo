@@ -1,0 +1,18 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app/untracked",
+      "default": true
+    },
+    {
+      "path": "force-app/reservation-app"
+    }
+  ],
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "55.0",
+  "packageAliases": {
+    "ZDF": "04tHu000003kloVIAQ",
+    "TAF": "04t3h000004VaVFAA0"
+  }
+}
