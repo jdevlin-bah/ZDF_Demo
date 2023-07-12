@@ -7,6 +7,11 @@ This repo houses a sample application to demonstrate the Zero Dependencies Frame
 
 This all happens via the ReservationService, and the ReservationServiceTest tests every path within the Sample Service. The ReservationService and ReservationServiceTest are both able to be deployed to a fresh scratch org by themselves, nothing extra is required to install/deploy (minus ZDF of course).
 
+## Examples
+1. ReservationService is an example Service class implementation built on the framework
+2. ReservationServiceTest includes test examples for testing every path the service can take
+3. QueryService is an example of how to build an adaptor for code that you do not own but still want to include within your codebase in a loosely-coupled way.
+
 ## ZDF Repository
 https://github.com/boozallen/zd-framework
 
