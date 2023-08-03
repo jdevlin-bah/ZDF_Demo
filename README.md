@@ -45,5 +45,5 @@ sf apex run test --class-names "ReservationServiceTest" --result-format human --
 
 ## Credits
 Zero Dependencies Framework - https://github.com/boozallen/zd-framework <br/>
-Trigger Actions Framework - https://github.com/boozallen/zd-framework <br/>
+Trigger Actions Framework - https://github.com/mitchspano/apex-trigger-actions-framework <br/>
 Apex Tool Kit - https://github.com/codefriar/ApexKit
